@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal Rank | Next-Gen Marketing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <p class="tagline">The new generation of marketing for local businesses.</p>
+    <h1>
+      Power Up Your <span id="animated-word" class="animated-word">Local Business</span> with <span class="accent">Portal Rank</span>
+    </h1>
+    <p class="subtext">AI-driven tools, automation, SEO, and influencer campaigns — all under one system.</p>
+    <div class="cta-buttons">
+      <a href="#" class="btn primary">Get Started</a>
+      <a href="#" class="btn outline">Live Demo</a>
+    </div>
+    <img src="dashboard.png" alt="Dashboard" class="hero-dashboard" />
+  </header>
+
+  <section class="brands">
+    <div class="brand-slider">
+      <span>Glow Spa</span>
+      <span>FixIt Co</span>
+      <span>Urban Cuts</span>
+      <span>Zap Meals</span>
+      <span>Klein Law</span>
+      <span>Renew Med</span>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-card glow-card"><h3>Missed Call Text-Back</h3><p>Never lose a lead again with automated replies.</p></div>
+    <div class="feature-card glow-card"><h3>Smart CRM</h3><p>Track leads and automate follow-ups in one place.</p></div>
+    <div class="feature-card glow-card"><h3>SEO Boost</h3><p>Dominate local search rankings with ease.</p></div>
+    <div class="feature-card glow-card"><h3>Influencer Campaigns</h3><p>Connect with local voices and amplify reach.</p></div>
+  </section>
+
+  <script>
+    const words = ["Local Business", "E-commerce Brand", "Social Media Creator"];
+    let i = 0;
+    const el = document.getElementById("animated-word");
+    setInterval(() => {
+      i = (i + 1) % words.length;
+      el.textContent = words[i];
+      el.style.color = "#9b5de5"; // Purple
+    }, 2500);
+  </script>
+</body>
+</html>

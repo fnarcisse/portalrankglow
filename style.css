@@ -1,0 +1,101 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d0d0d;
+  color: white;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+.accent {
+  color: #ff6a00;
+}
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+.hero .tagline {
+  text-transform: uppercase;
+  color: #ccc;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.hero h1 {
+  font-size: 42px;
+  margin: 20px 0;
+}
+.hero .subtext {
+  color: #aaa;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+.cta-buttons {
+  margin-bottom: 40px;
+}
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 10px;
+}
+.btn.primary {
+  background-color: #ff6a00;
+  color: white;
+}
+.btn.outline {
+  border: 2px solid #ff6a00;
+  color: #ff6a00;
+}
+.hero-dashboard {
+  max-width: 100%;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(255,106,0,0.4);
+}
+.animated-word {
+  transition: color 0.5s ease;
+}
+.brands {
+  padding: 40px 0;
+  overflow: hidden;
+  background: #111;
+}
+.brand-slider {
+  display: flex;
+  gap: 60px;
+  font-weight: bold;
+  color: #ff6a00;
+  animation: slide 20s linear infinite;
+  white-space: nowrap;
+}
+@keyframes slide {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+}
+.feature-card {
+  background: #1a1a1a;
+  padding: 30px;
+  width: 260px;
+  border-radius: 15px;
+  text-align: left;
+}
+.glow-card {
+  position: relative;
+  box-shadow: 0 0 15px rgba(255, 106, 0, 0.6);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from { box-shadow: 0 0 20px rgba(255, 106, 0, 0.4); }
+  to { box-shadow: 0 0 35px rgba(255, 106, 0, 0.8); }
+}
